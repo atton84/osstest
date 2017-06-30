@@ -1,0 +1,91 @@
+/**general**/
+
+body {
+  padding: 0px;
+  margin: 0px;
+  /*padding: 50px;*/
+  font-family: "Roboto", sans-serif;
+  font-size: 14px; /*"Lucida Grande", Helvetica, Arial, sans-serif*/;
+  overflow-x: hidden;
+}
+
+a {
+  color: #ff7043;
+}
+
+#searchForm{
+  padding-left:10px;
+}
+
+#main-container{
+  text-align: left;
+}
+/**menu customization**/
+
+#main-menu>*{
+  float:left;
+}
+
+/**file upploader**/
+
+#image-preview{
+  width: 15vw;
+  height: 15vh;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  /* border: 1px solid #ccc; */
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  /* background: #e91; */
+  border-radius: 2px;
+  color: rgb(255, 87, 34);
+}
+
+.custom-file-upload:hover{
+  background: #e0e0e0;
+}
+
+/**pagination**/
+.md-ui.component-pagination {
+  list-style: none;
+  padding: 8px;
+}
+.md-ui.component-pagination li {
+  border-radius: 2%;
+  color: #212121;
+  display: inline-block;
+  margin: 0;
+  transition: .15s ease-in;
+  cursor: pointer;
+}
+.md-ui.component-pagination li:hover {
+  background: rgba(233, 30, 99, 0.12);
+}
+.md-ui.component-pagination .pagination-number,
+.md-ui.component-pagination .pagination-arrow i {
+  vertical-align: middle;
+}
+.md-ui.component-pagination .pagination-number {
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  min-width: 40px;
+  padding: 8px 0;
+}
+.md-ui.component-pagination .pagination-number.current-number {
+  background: rgb(255, 87, 34);
+  color: #fff;
+}
+.md-ui.component-pagination .pagination-arrow i {
+  font-size: 24px;
+  padding: 8px;
+}
